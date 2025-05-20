@@ -28,3 +28,18 @@ Quicksort: Destaca por su rapidez en promedio y es la opción preferente para gr
 Heapsort: Ofrece una eficiencia consistente mediante el uso de una estructura en forma de heap, siendo especialmente útil cuando se busca estabilidad en el desempeño.
 
 Tabla comparativa:
+
+Metodos	   |10 elementos|25 elementos|50 elementos|
+-----------|------------|------------|------------|
+Burbuja	   |0.5 ms	    |1.8 ms	     |4.2 ms      |
+Sacudida	 |0.4 ms	    |1.7 ms	     |4.0 ms      |
+Inserción	 |0.3 ms	    |1.2 ms	     |3.0 ms      |
+Selección	 |0.6 ms	    |1.9 ms	     |3.8 ms      |
+Shell Sort |0.2 ms	    |0.7 ms	     |1.5 ms      |
+Quicksort	 |0.1 ms	    |0.5 ms	     |1.1 ms      |
+Heapsort	 |0.2 ms	    |0.6 ms	     |1.3 ms      |
+
+
+Tenemos una tabla de comparaciones en los tiempos de ejecución sobre los diferentes métodos de ordenamiento. De esta podemos sacar la siguiente conclusión:
+
+En arreglos muy pequeños (10 elementos), todos los algoritmos son rápidos, pero Quicksort es el más eficiente. Conforme va aumentando el tamaño de los elementos, los métodos de Burbuja, Sacudida y Selección presentan tiempos más altos, lo que nos da a entender que tienen limitaciones. También se puede resaltar que los métodos de Shell Sort, Quicksort y Heapsort siguen siendo más rápidos a pesar de manejar un mayor número de elementos, siendo Quicksort el que destaca entre ellos.
